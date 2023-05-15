@@ -1,0 +1,27 @@
+
+> nextjs-template@0.1.0 build
+> next build
+
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+info  - Collecting page data...
+info  - Generating static pages (0/3)
+info  - Generating static pages (3/3)
+info  - Finalizing page optimization...
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      6.36 kB        80.8 kB
+├   └ css/495c255344c060a8.css             611 B
+├   /_app                                  0 B            74.5 kB
+├ ○ /404                                   182 B          74.7 kB
+└ λ /api/hello                             0 B            74.5 kB
++ First Load JS shared by all              77.8 kB
+  ├ chunks/framework-2c79e2a64abdb08b.js   45.2 kB
+  ├ chunks/main-4dcb7f9b52833aba.js        27.2 kB
+  ├ chunks/pages/_app-5fbdfbcdfb555d2f.js  296 B
+  ├ chunks/webpack-4377536d4dcbe0d6.js     1.78 kB
+  └ css/0bb68b949a8ab2ce.css               3.32 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
