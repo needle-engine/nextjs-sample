@@ -1,22 +1,7 @@
 const webpack = require("webpack");
 
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ["three", "peerjs", "@needle-tools/engine", "three-mesh-ui"],
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.plugins.push(definePlugin);
-    return config;
-  }
+module.exports = async () => {
+  const { needleNext } = await import("@needle-tools/engine/plugins/next/index.js");
+  return needleNext({}, { modules: { webpack } });
 }
 
-
-const definePlugin = new webpack.DefinePlugin({
-  NEEDLE_ENGINE_META: {},
-  NEEDLE_USE_RAPIER: true,
-  parcelRequire: undefined,
-});
-
-
-module.exports = nextConfig;
