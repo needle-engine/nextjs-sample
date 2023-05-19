@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) adding the `needle-engine` web component.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) adding the [`needle-engine`](https://engine.needle.tools/docs/html.html) web component.
 
 ## Needle Engine
 This project is a minimal example of adding `needle-engine` to a nextjs project
