@@ -7,7 +7,7 @@ This project is a minimal example of adding `needle-engine` to a nextjs project
   Added the `baseUrl` config to `./assets` to change codegen (`src/generated/gen`) to point to the next.js local server relative url
 - [`next.config.js`](./next.config.js)  
   Include the nextjs plugin which handles `transpilePackages`, webpack `defines` and licensing
-- [tsconfig.json](/tsconfig.json) set decorators to true by adding `"experimentalDecorators": true`
+- [tsconfig.json](/tsconfig.json#L19) set decorators to true by adding `"experimentalDecorators": true`
 - [`src/needleEngine.tsx`](src/needleEngine.tsx)  
   This is a simple next component for including the `needle-engine` web component. 
   make sure to also add the type declarations from [`src/declarations.d.ts`](./src/declarations.d.ts)  
