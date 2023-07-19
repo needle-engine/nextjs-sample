@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", () =>
 	}
 });
 
-console.log("Made\ with\ ♥\ by\ 🌵\ Needle\ -\ https://needle\.tools\ —\ Version\ 3\.5\.9-exp\.1");
+console.log("Made\ with\ ♥\ by\ 🌵\ Needle\ -\ https://needle\.tools");
