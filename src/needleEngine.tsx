@@ -7,7 +7,8 @@ import "@needle-tools/engine"
 import { NeedleEngineAttributes } from "@needle-tools/engine";
 import { useEffect, useState } from "react";
 
-export type NeedleEngineProps = NeedleEngineAttributes;
+// Make addEventListener optional
+export type NeedleEngineProps = Omit<NeedleEngineAttributes, 'addEventListener'> & { addEventListener?: (event: CustomEvent) => void };
 
 /** **Needle Engine Component**  
  * Import with `const NeedleEngine = dynamic(() => import('./needleEngine'), { ssr: false })`
