@@ -22,11 +22,12 @@ export default function NeedleEngine({ ...props }): JSX.Element {
   const [src, setSrc] = useState(props?.src)
 
   useEffect(() => {
-    // lazy import the codegen if no explicit src is defined
-    if (!isServer() && props?.src === undefined) {
+    // import the codgegen to register types
+    if (!isServer()) {
       import("./generated/gen")
         .then((m) => {
-          setSrc(m.needle_exported_files)
+          if (props?.src === undefined)
+            setSrc(m.needle_exported_files)
         })
         .catch((e) => {
           console.error(e)
