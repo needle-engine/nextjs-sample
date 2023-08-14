@@ -1,4 +1,4 @@
-﻿import "./register_types"
+﻿import "./register_types.ts"
 
 export const needle_exported_files = [];
 globalThis["needle:codegen_files"] = needle_exported_files;
