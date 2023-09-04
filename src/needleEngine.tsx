@@ -3,8 +3,7 @@
 
 const isServer = () => typeof window === `undefined`;
 
-import "@needle-tools/engine"
-import { NeedleEngineAttributes } from "@needle-tools/engine";
+import { type NeedleEngineAttributes } from "@needle-tools/engine";
 import { useEffect, useState } from "react";
 
 // Make addEventListener optional
