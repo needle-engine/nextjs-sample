@@ -4,7 +4,7 @@
   "absolutePath": "https://localhost:3000",
   "sceneName": "Next",
   "deployOnly": false,
-  "generator": "Needle Engine for Unity 3.5.9-exp.1",
+  "generator": "Unity 2021.3.28f1, Needle Engine Integration @3.22.6",
   "gzip": true,
   "allowHotReload": false,
   "license": null,
