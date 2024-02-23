@@ -42,7 +42,6 @@ export default function Home() {
       <div className="relative overflow-clip flex items-center justify-between w-full h-[48rem] lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 my-5">
 
         <NeedleEngine
-          loading-style="light"
           style={{
             left: "0",
             top: "0",
