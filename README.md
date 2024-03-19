@@ -15,7 +15,12 @@ This project is a minimal example of adding `needle-engine` to a nextjs project
   Import the component to run client-side:  
   ```tsx
   const NeedleEngine = dynamic(() => import('../needleEngine'), { ssr: false })
-  ```   
+  ```
+
+### FAQ
+- Q: My web project has no files in the `dist` output directory ([see question in needle discord](https://discord.com/channels/717429793926283276/1210179478119120896/1219409114145361930))   
+  A: Add `output: 'export'` to you next.config.js (see [nextjs documentation](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports#configuration))
+  
 
 ## Getting Started
 
