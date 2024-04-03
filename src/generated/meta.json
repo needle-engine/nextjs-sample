@@ -1,12 +1,18 @@
 {
-  "needleEditor": null,
-  "meta": null,
-  "absolutePath": "https://localhost:3000",
-  "sceneName": "Next",
-  "deployOnly": false,
-  "generator": "Unity 2021.3.28f1, Needle Engine Integration @3.22.6",
   "gzip": true,
-  "allowHotReload": false,
-  "license": null,
-  "useRapier": true
+  "generator": "Unity 2022.3.20f1, Needle Engine Integration @3.36.2-pre",
+  "developmentBuild": false,
+  "allowHotReload": true,
+  "facebookInstantGames": null,
+  "license": "pro",
+  "useRapier": true,
+  "needleEditor": null,
+  "sceneName": "Next",
+  "meta": {
+    "title": "NextJS",
+    "description": "Integration with the NextJS framework.",
+    "image": "include/NextJSProjectSample.jpg"
+  },
+  "absolutePath": "https://localhost:3000",
+  "deployOnly": false
 }
