@@ -28,7 +28,7 @@ jobs:
           NEEDLE_CLOUD_TOKEN: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
 
       - name: Deploy to Needle Cloud
-        uses: needle-tools/deploy-to-needle-cloud-action@v1.0.1
+        uses: needle-tools/deploy-to-needle-cloud-action@v1
         id: deploy
         with:
           token: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
