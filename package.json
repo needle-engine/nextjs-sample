@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 	  "@babel/runtime": "^7.16.0",
-	  "@needle-tools/engine": "^4.1.0-beta.8",
+	  "@needle-tools/engine": "^4.4.0-beta.3",
 	  "@types/node": "18.15.11",
 	  "@types/react": "18.0.35",
 	  "@types/react-dom": "18.0.11",
