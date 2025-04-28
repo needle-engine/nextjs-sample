@@ -24,6 +24,9 @@ export default function NeedleEngine({ ...props }): JSX.Element {
   useEffect(() => {
     // import the codgegen to register types
     if (!isServer()) {
+      // import("@needle-tools/engine").then(res => {
+      //   res.onStart(ctx => ctx.menu.showNeedleLogo(false))
+      // })
       import("./generated/gen")
         .then((m) => {
           if (props?.src === undefined)
