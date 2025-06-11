@@ -19,10 +19,8 @@ jobs:
           node-version: '20.x'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build application
+      - run: npm ci
+      - name: Build
         run: npm run build
         env:
           NEEDLE_CLOUD_TOKEN: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
@@ -33,9 +31,6 @@ jobs:
         with:
           token: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
           dir: ./dist
-        env:
-          NODE_ENV: production
-          NEEDLE_CLOUD_TOKEN: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
           
       - name: Display deployment URL
         run: |
