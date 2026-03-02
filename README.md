@@ -32,4 +32,6 @@ To learn more about Needle Engine & Next.js, take a look at the following resour
 
 ## Deployment
 
+This template is set-up to [deploy to Needle Cloud](https://github.com/needle-engine/nextjs-sample/blob/main/.github/workflows/deploy.yml) via Github Actions.
+
 Check out our [Needle Engine deployment documentation](https://engine.needle.tools/docs/how-to-guides/deployment/#deploy-to-vercel) for more details.
