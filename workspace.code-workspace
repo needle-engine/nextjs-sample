@@ -4,7 +4,8 @@
       "path": "."
     },
     {
-      "path": "./node_modules/@needle-tools/engine"
+      "path": "./node_modules/@needle-tools/engine",
+      "name": "🌵 Needle Engine"
     }
   ],
   "settings": {

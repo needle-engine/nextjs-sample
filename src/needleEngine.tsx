@@ -8,7 +8,7 @@ import { type NeedleEngineAttributes } from "@needle-tools/engine";
 import { useEffect, useState } from "react";
 
 // Make addEventListener optional
-export type NeedleEngineProps = Omit<NeedleEngineAttributes, 'addEventListener'> & { addEventListener?: (event: CustomEvent) => void };
+export type NeedleEngineProps = Partial<NeedleEngineAttributes> & React.HTMLAttributes<HTMLElement>;
 
 /** **Needle Engine Component**  
  * Import with `const NeedleEngine = dynamic(() => import('./needleEngine'), { ssr: false })`
@@ -17,7 +17,7 @@ export type NeedleEngineProps = Omit<NeedleEngineAttributes, 'addEventListener'>
  * <NeedleEngine src="./assets/next.glb" loading-style="light" style={{ width: '100%', height: '100%', }}></NeedleEngine>
  * 
  */
-export default function NeedleEngine({ ...props }): JSX.Element {
+export default function NeedleEngine({ ...props }: NeedleEngineProps): JSX.Element {
 
   const [src, setSrc] = useState(props?.src)
 

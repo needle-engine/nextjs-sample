@@ -1,18 +1,21 @@
 {
-  "gzip": true,
-  "generator": "Unity 2022.3.20f1, Needle Engine Integration @3.36.2-pre",
-  "developmentBuild": false,
-  "allowHotReload": true,
-  "facebookInstantGames": null,
-  "license": "pro",
-  "useRapier": true,
-  "needleEditor": null,
-  "sceneName": "Next",
-  "meta": {
-    "title": "NextJS",
-    "description": "Integration with the NextJS framework.",
-    "image": "include/NextJSProjectSample.jpg"
+  "needleEditor": {
+    "enabled": true,
+    "components": true,
+    "materials": true,
+    "sceneCamera": false
   },
+  "meta": null,
   "absolutePath": "https://localhost:3000",
-  "deployOnly": false
+  "sceneName": "Collaborative Sandbox",
+  "deployOnly": false,
+  "generator": "Unity 2021.3.45f2, Needle Engine Integration @4.16.5",
+  "gzip": true,
+  "allowHotReload": false,
+  "developmentBuild": false,
+  "license": {
+    "team": "jg3twr0f7zgf"
+  },
+  "facebookInstantGames": null,
+  "useRapier": true
 }
