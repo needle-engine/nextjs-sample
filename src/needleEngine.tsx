@@ -30,7 +30,7 @@ export default function NeedleEngine({ ...props }: NeedleEngineProps): JSX.Eleme
       import("./generated/gen")
         .then((m) => {
           if (props?.src === undefined)
-            setSrc(m.needle_exported_files)
+            setSrc(m.needle_exported_files as unknown as string)
         })
         .catch((e) => {
           console.error(e)
